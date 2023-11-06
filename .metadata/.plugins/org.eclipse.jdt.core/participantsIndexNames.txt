@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+/Users/araikakhokhar/Desktop/cs336/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1613145273.index
+/helloWorld/src/main/java
+/Users/araikakhokhar/Desktop/cs336/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2100297674.index
+/project336Part3/src/main/java
+/Users/araikakhokhar/Desktop/cs336/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3320447379.index
+/cs336Sample/src/main/java

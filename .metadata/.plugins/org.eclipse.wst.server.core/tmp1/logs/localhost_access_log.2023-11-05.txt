@@ -1,0 +1,14 @@
+127.0.0.1 - - [05/Nov/2023:18:07:38 -0500] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:18:07:39 -0500] "GET /project336Part3/ HTTP/1.1" 404 1092
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:18:16:02 -0500] "GET /project336Part3/projectPart3.jsp HTTP/1.1" 200 401
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:18:18:15 -0500] "GET /project336Part3/projectPart3.jsp HTTP/1.1" 200 452
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:18:35:53 -0500] "GET /project336Part3/createAccountLoginPage.jsp HTTP/1.1" 500 3711
+127.0.0.1 - - [05/Nov/2023:18:38:15 -0500] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:18:38:17 -0500] "GET /project336Part3/createAccountLoginPage.jsp HTTP/1.1" 500 3747
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:18:46:26 -0500] "GET /project336Part3/createAccountLoginPage.jsp HTTP/1.1" 500 2815
+127.0.0.1 - - [05/Nov/2023:18:53:27 -0500] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:18:53:28 -0500] "GET /project336Part3/WEB-INF/classes/com/cs336/project3pkg/flightReservationDB.java HTTP/1.1" 404 1053
+127.0.0.1 - - [05/Nov/2023:18:53:50 -0500] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:18:53:55 -0500] "GET /project336Part3/createAccountLoginPage.jsp HTTP/1.1" 200 588
+127.0.0.1 - - [05/Nov/2023:18:56:11 -0500] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:18:56:12 -0500] "GET /project336Part3/createAccountLoginPage.jsp HTTP/1.1" 200 588

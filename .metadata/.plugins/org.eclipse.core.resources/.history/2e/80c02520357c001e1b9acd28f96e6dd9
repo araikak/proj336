@@ -1,0 +1,64 @@
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*"%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Create Account</b>
+    <form>
+        User name: <input type="text" id="user name" name="user name"><br>
+        Password: <input type="password" id="password" name="password"><br>
+    </form>
+    <button type="button">Create Account</button>
+<%
+	try {
+
+		//Get the database connection
+		flightReservationDB db = new flightReservationDB();	
+		Connection con = db.getConnection();
+
+		//Create a SQL statement
+		Statement stmt = con.createStatement();
+
+		//Get parameters from the HTML form at the 
+		String newUsername = request.getParameter("user name");
+		String newPassword = request.getParameter("password");
+
+		//Create query from input
+			String insertUserPassStmt = "INSERT INTO customer (user_name, password) VALUES(?, ?)";
+				
+		//Create a Prepared SQL statement allowing you to introduce the parameters of the query
+		PreparedStatement psAddCustomerInfo = con.prepareStatement(insertUserPassStmt);
+		
+		//Run the query against the database.
+			ResultSet result = stmt.executeQuery(psAddCustomerInfo);
+
+			
+		//Create a Prepared SQL statement allowing you to introduce the parameters of the query
+		PreparedStatement ps = con.prepareStatement(insert);
+
+		//Add parameters of the query. Start with 1, the 0-parameter is the INSERT statement itself
+		psAddCustomerInfo.setString(1, newUsername);
+		psAddCustomerInfo.setString(2, newPassword);
+
+		//Run the query against the DB
+		ps.executeUpdate();
+
+		//Close the connection. Don't forget to do it, otherwise you're keeping the resources of the server allocated.
+		con.close();
+
+		out.print("Insert succeeded!");
+		
+	} catch (Exception ex) {
+		out.print(ex);
+		out.print("Insert failed :()");
+	}
+%>
+
+</body>
+</html>
